@@ -25,9 +25,8 @@ header {
 span#menu {
     font-size: 2.5rem;
     margin-right: 20px;
-    border: 1px solid white;
 }
-img#justice_image {
+img.justice_image {
     height: 100%;
     max-width: 100%;
     object-fit: cover;
@@ -57,13 +56,28 @@ section#landing_section {
 span.color {
     color: #e03e53;
 }
-div#services_title {
+div.title {
     display: flex;
-    color: #222222;
+    color: #aca8a6;
     padding-left: 0.5em;
-    border: 1px solid #e03e53;
     justify-content: space-between;
     box-shadow: 1px 1px 1px 1px #e03e53;
+}
+div#about_title {
+    box-shadow: none;
+}
+img.bea-image {
+    width: 80px;
+    height: 80px;
+    align-self: center;
+}
+img#eagler {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 2px #000000;
 }
 section#container {
     display: flex;
@@ -76,6 +90,8 @@ footer {
     bottom: 0;
     width: 100%;
     height: 5vh;
+    align-items: center;
+    display: flex;
     padding: 0.5em;
     color: white;
     position: fixed;
@@ -96,15 +112,86 @@ ul#menu li {
 }
 ul#menu li:hover {
     padding: 0.5em;
+    cursor: pointer;
     color: #e03e53;
     font-weight: bold;
-    background: white;
+    font-size: larger;
+    background: rgba(225,225,225,0.7);
 }
 section.services {
     margin-top: 95vh;
 }
+section.about > img {
+    width: 100%;
+    object-fit: cover;
+}
+section.about_body,
+section.contact_body {
+    padding: 0.5em;
+    color: white;
+    background: #e03e53;
+}
+section.people p {
+    margin-top: -10px;
+}
+section.contact h1,
+section.about_body h1 {
+    text-align: center;
+}
+span.space {
+    margin-left: 10px;
+}
+section.people_body {
+    padding: 0.5em;
+}
+figcaption {
+    padding-top: 0.5em;
+}
+figcaption,
+section.people h1 {
+    color:#e03e53;
+    text-align: center;
+}
 div.services_body  {
     padding-left: 0.5em;
+    padding-bottom: 1em;
+}
+ul.strategies {
+    list-style-type: square;
+}
+ul.strategies li::marker {
+    font-size: xx-large;
+}
+button.read-more {
+    border: none;
+    margin: auto;
+    outline: none;
+    padding: 0.5em;
+    display: block;
+    color: white;
+    border-radius: 5px;
+    font-family: inherit; 
+    background: #e03e53;  
+}
+button#about_read-more {
+    color: #e03e53;
+    font-weight: bold;
+    background: white;
+}
+i.fa-solid,
+section.contact_body h1 {
+    color: white;
+}
+
+div.social_icons {
+    margin: 0.5em;
+    display: flex;
+    color: #e03e53;
+    font-size: x-large;
+    justify-content: space-around;
+}
+button#read-more:hover {
+    color: #e03e53;
 }
 dl {
     list-style: none;
@@ -118,7 +205,7 @@ dt::before {
     margin-right: 5px;
     font-size: x-large;
     display: inline-block;
-  }
+}
 @media only screen and (max-width: 480px){
     ul#menu {
         display: none;
@@ -137,7 +224,17 @@ dt::before {
     
 }
 @media only screen and (min-width: 600px){
+    body {
+        font-size: 18px;
+    }
     ul#menu {
         gap: 1em;
+    }
+    #logo {
+        max-width: 150px;
+    }
+    div#services_title {
+        
+        justify-content: space-around;
     }
 }
