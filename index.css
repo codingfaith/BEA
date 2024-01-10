@@ -90,13 +90,14 @@ footer {
     bottom: 0;
     width: 100%;
     height: 5vh;
-    align-items: center;
     display: flex;
     padding: 0.5em;
     color: white;
     position: fixed;
     text-align: center;
+    align-items: center;
     background: #e03e53;
+    justify-content: center;
 }
 ul#menu {
     gap: 0.5em;
