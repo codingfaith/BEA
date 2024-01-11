@@ -14,6 +14,36 @@ header {
     background: #e03e53;
     justify-content: space-between;
 }
+nav {
+    top: 0;
+    right: 0;
+    z-index: 2;
+    gap: 0.5em;
+    width: 60%;
+    height: 95vh;
+    display: flex;
+    display: none;
+    position: fixed;
+    color: #e03e53;
+    background: white;
+    padding-right: 0.5em;
+    flex-direction: column;
+}
+span#close {
+    color: #e03e53;
+    text-align: right;
+    font-weight: bold;
+    font-size: x-large;
+}
+nav li {
+    list-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+nav li:hover {
+    color: white;
+    background: #e03e53;
+}
 #logo {
     height: auto;
     max-width: 130px;
@@ -77,7 +107,7 @@ img#eagler {
     margin: auto;
     display: block;
     border-radius: 50%;
-    box-shadow: 1px 1px 2px 2px #000000;
+    box-shadow: 1px 1px 2px 2px #303030;
 }
 section#container {
     display: flex;
@@ -88,6 +118,7 @@ section#container {
 }
 footer {
     bottom: 0;
+    z-index: 3;
     width: 100%;
     height: 5vh;
     display: flex;
@@ -142,6 +173,7 @@ section.about_body h1 {
 span.space {
     margin-left: 10px;
 }
+div#specialisation,
 section.people_body {
     padding: 0.5em;
 }
@@ -157,10 +189,11 @@ div.services_body  {
     padding-left: 0.5em;
     padding-bottom: 1em;
 }
-ul.strategies {
+div#specialisation ul {
     list-style-type: square;
 }
-ul.strategies li::marker {
+div#specialisation ul li::marker {
+    color:#e03e53;
     font-size: xx-large;
 }
 button.read-more {
@@ -197,7 +230,9 @@ button#read-more:hover {
 dl {
     list-style: none;
 }
-dt {
+dt,
+div#specialisation p,
+div#specialisation h1 {
     color: #e03e53;
     font-weight: bold;
 }
