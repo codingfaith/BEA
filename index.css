@@ -27,6 +27,10 @@ nav {
     background: white;
     flex-direction: column;
 }
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
 span#close {
     padding: 0.5em;
     color: #e03e53;

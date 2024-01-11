@@ -2,6 +2,7 @@
 const nav = document.getElementById('nav')
 const menu = document.getElementById('menu')
 const closeX = document.getElementById('close')
+const allATags = document.getElementsByTagName('a')
 const more_eagler = document.getElementById('more_eagler')
 const specialisation = document.getElementById('specialisation')
 const more_servicesBtn = document.getElementById('more-services')
@@ -24,7 +25,16 @@ more_servicesBtn.addEventListener('click',()=>{
 
 })
 
+// show more_eagler paragraph when the read more button is clicked
 people_read_moreBtn.addEventListener('click',()=>{
     more_eagler.style.display = "block"
     people_read_moreBtn.style.display = "none"
 })
+
+// hide navbar when a link is clicked
+for(let tag of allATags){
+    tag.addEventListener('click',()=>{
+        nav.style.display = "none"
+    })
+}
+
