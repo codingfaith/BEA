@@ -5,7 +5,6 @@ const closeX = document.getElementById('close')
 const more_eagler = document.getElementById('more_eagler')
 const specialisation = document.getElementById('specialisation')
 const more_servicesBtn = document.getElementById('more-services')
-const less_servicesBtn = document.getElementById('less-services')
 const people_read_moreBtn = document.getElementById('people_read-more')
 
 // show nav bar when menu bar is clicked
@@ -23,12 +22,6 @@ more_servicesBtn.addEventListener('click',()=>{
     specialisation.style.display = "block"
     more_servicesBtn.style.display = "none"
 
-})
-
-// hide specialisation div and return read more button when see less button is clicked
-less_servicesBtn.addEventListener('click',()=>{
-    specialisation.style.display = "none"
-    more_servicesBtn.style.display = "block"
 })
 
 people_read_moreBtn.addEventListener('click',()=>{
