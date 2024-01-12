@@ -19,10 +19,11 @@ closeX.addEventListener('click',()=>{
     nav.style.display = "none"
 })
 
-// show specialisation div, hide read more button and reposition title when read more button is clicked
+// show specialisation div, hide read more button and display and reposition title when read more button is clicked
 more_servicesBtn.addEventListener('click',()=>{
     specialisation.style.display = "block"
     more_servicesBtn.style.display = "none"
+    specialisation_title.style.display = "block"
     specialisation_title.style.marginTop = "-35px"
 })
 

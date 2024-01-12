@@ -143,6 +143,10 @@ section.about > img {
     width: 100%;
     object-fit: cover;
 }
+div.about_body-content {
+    margin: auto;
+    max-width: 800px;
+}
 section.about_body,
 section.contact_body {
     padding: 0.5em;
@@ -153,9 +157,13 @@ section.people p {
     margin-top: -10px;
 }
 section.contact h1,
-div#specialisation h1,
-section.about_body h1 {
+section.about_body h1,
+h1#specialisation_title {
     text-align: center;
+}
+h1#specialisation_title {
+    display: none;
+    color: #e03e53;
 }
 span.space {
     margin-left: 10px;
@@ -171,7 +179,8 @@ figcaption {
     padding-top: 0.5em;
 }
 figcaption,
-section.people h1 {
+section.people h1,
+div#specialisation > p {
     color:#e03e53;
     text-align: center;
 }
@@ -206,13 +215,16 @@ i.fa-solid,
 section.contact_body h1 {
     color: white;
 }
-
 div.social_icons {
     margin: 0.5em;
     display: flex;
     color: #e03e53;
     font-size: x-large;
     justify-content: space-around;
+}
+div.contact_icons {
+    display: flex;
+    flex-direction: column;
 }
 button#read-more:hover {
     color: #e03e53;
@@ -231,6 +243,12 @@ dt::before {
     margin-right: 5px;
     font-size: x-large;
     display: inline-block;
+}
+
+div.people_content {
+    display: flex;
+    flex-wrap: no-wrap;
+    flex-direction: column;
 }
 @media only screen and (max-width: 480px) {
     nav {
@@ -270,15 +288,15 @@ dt::before {
         color: #e03e53;
         background: rgba(225,225,225,0.7);
     }
+    div.contact_icons {
+        gap: 0.5em;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 @media only screen and (min-width: 600px){
-    body {
-        font-size: 18px;
-    }
-    nav li {
-        font-size: 16px;
-    }
     #logo {
         max-width: 150px;
     }
@@ -309,15 +327,24 @@ dt::before {
         max-width: 100%;
         object-fit: cover;
     }
-    div.services_body  {
+    div.services_body {
         gap: 0.5em;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    div.specific,
     div.services_body dl {
         width: 45%;
+    } 
+}
+@media only screen and (min-width: 800px){
+    div.people_content {
+        flex-direction: row;
     }
+    section.people_body {
+        padding: 2.5em;
+    } 
 }
 @media only screen and (min-width: 992px){
     div#overlay h2 {
@@ -326,6 +353,7 @@ dt::before {
     div#overlay h5 {
         font-size: 1.5rem;
     }
+    div.specific,
     div.services_body dl {
         width: 30%;
     }
