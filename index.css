@@ -88,7 +88,6 @@ section.landing_section {
     top: 20vh;
     height: 75vh;
     position: absolute;
-    /* align-self: center; */
 }
 span.color {
     color: #e03e53;
@@ -154,6 +153,7 @@ section.people p {
     margin-top: -10px;
 }
 section.contact h1,
+div#specialisation h1,
 section.about_body h1 {
     text-align: center;
 }
@@ -237,11 +237,13 @@ dt::before {
         display: none;
     }
 }
+
 @media only screen and (min-width: 481px) and (max-width: 600px){
     nav {
         font-size: small;
     }
 }
+
 @media only screen and (min-width: 481px){
     div#overlay h2 {
         font-size: 2rem;
@@ -269,6 +271,7 @@ dt::before {
         background: rgba(225,225,225,0.7);
     }
 }
+
 @media only screen and (min-width: 600px){
     body {
         font-size: 18px;
@@ -306,12 +309,24 @@ dt::before {
         max-width: 100%;
         object-fit: cover;
     }
-    @media only screen and (min-width: 992px){
-        div#overlay h2 {
-            font-size: 2.5rem;
-        }
-        div#overlay h5 {
-            font-size: 1.5rem;
-        }
+    div.services_body  {
+        gap: 0.5em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    div.services_body dl {
+        width: 45%;
+    }
+}
+@media only screen and (min-width: 992px){
+    div#overlay h2 {
+        font-size: 2.5rem;
+    }
+    div#overlay h5 {
+        font-size: 1.5rem;
+    }
+    div.services_body dl {
+        width: 30%;
     }
 }

@@ -7,6 +7,7 @@ const more_eagler = document.getElementById('more_eagler')
 const specialisation = document.getElementById('specialisation')
 const more_servicesBtn = document.getElementById('more-services')
 const people_read_moreBtn = document.getElementById('people_read-more')
+const specialisation_title = document.getElementById('specialisation_title')
 
 // show nav bar when menu bar is clicked
 menu.addEventListener('click',()=>{
@@ -18,11 +19,11 @@ closeX.addEventListener('click',()=>{
     nav.style.display = "none"
 })
 
-// show specialisation div and hide read more button when read more button is clicked
+// show specialisation div, hide read more button and reposition title when read more button is clicked
 more_servicesBtn.addEventListener('click',()=>{
     specialisation.style.display = "block"
     more_servicesBtn.style.display = "none"
-
+    specialisation_title.style.marginTop = "-35px"
 })
 
 // show more_eagler paragraph when the read more button is clicked
