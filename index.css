@@ -263,7 +263,7 @@ div.people_content {
 }
 
 @media only screen and (min-width: 481px){
-    div#overlay h2 {
+    div#overlay h1 {
         font-size: 2rem;
     }
     div#overlay h5 {
@@ -347,7 +347,7 @@ div.people_content {
     } 
 }
 @media only screen and (min-width: 992px){
-    div#overlay h2 {
+    div#overlay h1 {
         font-size: 2.5rem;
     }
     div#overlay h5 {
