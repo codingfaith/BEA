@@ -36,10 +36,10 @@ people_read_moreBtn.addEventListener('click',()=>{
 // hide navbar when a link is clicked
 const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 for(let tag of allATags){
-    tag.addEventListener('click',()=>{
-        if (screenWidth < 481) {
-            nav.style.display = "none"
-        }    
-    })
+    if (screenWidth < 481) {
+        tag.addEventListener('click',()=>{
+            nav.style.display = "none" 
+        })
+    }     
 }
 
