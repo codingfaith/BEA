@@ -410,7 +410,9 @@ div.people_content {
     }
 }
 @media only screen and (min-width: 992px){
-    body,
+    body {
+        font-size: x-large;
+    }
     button {
         font-size: large;
     }
