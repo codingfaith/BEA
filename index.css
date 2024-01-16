@@ -412,7 +412,7 @@ div.people_content {
 @media only screen and (min-width: 992px){
     body,
     button {
-        font-size: x-large;
+        font-size: large;
     }
     div.social_icons {
         font-size: xx-large;
