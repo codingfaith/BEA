@@ -43,7 +43,7 @@ for(let tag of allATags){
         })
     }     
 }
-if (screenWidth >= 800) {
+if (screenWidth >= 600) {
     contact_logo_container.style.display = "block"
 }
 

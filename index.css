@@ -237,6 +237,9 @@ i.fa-solid,
 section.contact_body h1 {
     color: white;
 }
+i.fa-solid {
+    font-size: medium;
+}
 div.wrapper {
     width: 100%;
 }
