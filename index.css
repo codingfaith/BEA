@@ -251,12 +251,21 @@ img#contact-logo {
 }
 div.contact_container {
     display: flex;
-
 }
 div#contact-logo-container {
     width: 50%;
     height: 390px;
     display: none;
+    position: relative;
+}
+div.cover {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    background: rgba(224,65,85,0.5);
 }
 div.contact_icons {
     display: flex;
