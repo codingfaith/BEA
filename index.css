@@ -132,6 +132,7 @@ footer {
     padding: 0.5em;
     color: white;
     position: fixed;
+    font-size: small;
     text-align: center;
     align-items: center;
     background: #e03e53;
@@ -157,6 +158,7 @@ p#quote {
     text-align: center;
     background: rgba(225,225,225,0.7);    
 }
+div.contract,
 div.about_body-content {
     margin: auto;
     max-width: 1024px;
@@ -183,6 +185,10 @@ span.space {
 }
 div#specialisation {
     display: none;
+    margin: auto;
+    max-width: 1024px;
+    box-shadow: 1px 1px 5px 1px #aca8a6;
+
 }
 div#specialisation,
 section.people_body {
@@ -205,11 +211,11 @@ div.services_body  {
     padding-bottom: 1em;
 }
 div#specialisation ul {
-    list-style-type: square;
+    list-style-type: circle;
 }
 div#specialisation ul li::marker {
     color:#e03e53;
-    font-size: xx-large;
+    font-size: large;
 }
 button.read-more {
     border: none;
@@ -302,7 +308,7 @@ div.people_content {
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 600px){
+@media only screen and (min-width: 481px){
     nav {
         font-size: small;
     }
@@ -385,6 +391,13 @@ div.people_content {
     div.services_body dl {
         width: 45%;
     } 
+    div.specifics {
+        /* gap: 1em; */
+        display: flex;
+    }
+    div.specifics p {
+        width: 50%;
+    }
 }
 @media only screen and (min-width: 800px){
     div.people_content {
@@ -411,12 +424,15 @@ div.people_content {
     div#overlay h5 {
         font-size: 1.5rem;
     }
-    div.specific,
     div.services_body dl {
         width: 30%;
     }
     div.title {
         padding-left: 1em;
+    }
+    nav,
+    footer {
+        font-size: large;
     }
 
 }
