@@ -8,6 +8,7 @@ const specialisation = document.getElementById('specialisation')
 const more_servicesBtn = document.getElementById('more-services')
 const people_read_moreBtn = document.getElementById('people_read-more')
 const specialisation_title = document.getElementById('specialisation_title')
+const contact_logo_container = document.getElementById('contact-logo-container')
 
 // show nav bar when menu bar is clicked
 menu.addEventListener('click',()=>{
@@ -41,5 +42,8 @@ for(let tag of allATags){
             nav.style.display = "none" 
         })
     }     
+}
+if (screenWidth >= 800) {
+    contact_logo_container.style.display = "block"
 }
 

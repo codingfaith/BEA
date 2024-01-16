@@ -1,4 +1,5 @@
 body {
+    font-size: larger;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -148,10 +149,9 @@ div.breaker > img {
     object-fit: cover;
 }
 p#quote {
-    padding: 2em;
+    padding: 0.5em;
     color: #e03e53;
     font-style: italic;
-    font-weight: bold; 
     position: absolute;
     align-self: center;
     text-align: center;
@@ -159,7 +159,7 @@ p#quote {
 }
 div.about_body-content {
     margin: auto;
-    max-width: 992px;
+    max-width: 1024px;
 }
 section.about_body,
 section.contact_body {
@@ -171,7 +171,6 @@ section.people p {
     margin-top: -10px;
 }
 section.contact h1,
-section.about_body h1,
 h1#specialisation_title {
     text-align: center;
 }
@@ -232,12 +231,32 @@ i.fa-solid,
 section.contact_body h1 {
     color: white;
 }
-div.social_icons {
-    margin: 0.5em;
+div.wrapper {
+    width: 100%;
+}
+
+section.socials  {
+    margin: 1.5em 0;
     display: flex;
     color: #e03e53;
     font-size: x-large;
+    align-self: center;
     justify-content: space-around;
+}
+img#contact-logo {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover
+}
+div.contact_container {
+    display: flex;
+
+}
+div#contact-logo-container {
+    width: 50%;
+    height: 390px;
+    display: none;
 }
 div.contact_icons {
     display: flex;
@@ -370,6 +389,13 @@ div.people_content {
     }
 }
 @media only screen and (min-width: 992px){
+    body,
+    button {
+        font-size: x-large;
+    }
+    div.social_icons {
+        font-size: xx-large;
+    }
     div#overlay h1 {
         font-size: 2.5rem;
     }
@@ -380,4 +406,8 @@ div.people_content {
     div.services_body dl {
         width: 30%;
     }
+    div.title {
+        padding-left: 1em;
+    }
+
 }
