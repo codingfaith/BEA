@@ -82,7 +82,7 @@ div#overlay {
     text-align: center;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(225,225,225,0.8);
+    background-color: rgba(225,225,225,0.9);
 }
 section.landing_section {
     top: 20vh;
@@ -139,17 +139,31 @@ footer {
 section.services {
     margin-top: 95vh;
 }
-section.about > img {
+div.breaker {
+    display: flex;
+    justify-content: center;
+}
+div.breaker > img {
     width: 100%;
     object-fit: cover;
 }
+p#quote {
+    padding: 2em;
+    color: #e03e53;
+    font-style: italic;
+    font-weight: bold; 
+    position: absolute;
+    align-self: center;
+    text-align: center;
+    background: rgba(225,225,225,0.7);    
+}
 div.about_body-content {
     margin: auto;
-    max-width: 800px;
+    max-width: 992px;
 }
 section.about_body,
 section.contact_body {
-    padding: 0.5em;
+    padding: 1em;
     color: white;
     background: #e03e53;
 }
@@ -173,7 +187,10 @@ div#specialisation {
 }
 div#specialisation,
 section.people_body {
-    padding: 0.5em;
+    padding: 1em;
+}
+section.people_body {
+    max-width: 800px;
 }
 figcaption {
     padding-top: 0.5em;
@@ -250,6 +267,7 @@ div.people_content {
     flex-wrap: no-wrap;
     flex-direction: column;
 }
+
 @media only screen and (max-width: 480px) {
     nav {
         display: none;
@@ -306,6 +324,7 @@ div.people_content {
     section.landing_section {
         width: 100%;
         display: flex;
+        box-shadow: 1px 1px 5px 1px #aca8a6;
     }
     div#overlay {
         height: 100%;
@@ -315,10 +334,11 @@ div.people_content {
         position: static;
         width: fit-content; 
         text-align: center;
+        background: white;
         box-sizing: border-box;
         flex-direction: column;
         justify-content: center;
-        background-color: rgba(225,225,225,0.8);
+        
     }
     img.justice_image {
         width: 100%;
@@ -345,6 +365,9 @@ div.people_content {
     section.people_body {
         padding: 2.5em;
     } 
+    div.people_content {
+       justify-content: space-around;
+    }
 }
 @media only screen and (min-width: 992px){
     div#overlay h1 {
