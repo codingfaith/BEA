@@ -50,8 +50,21 @@ for(let tag of allATags){
         })
     }     
 }
+
+//hide section logos on large screens
 if (screenWidth >= 600) {
     for(let logo of allLogos){
         logo.style.display = "none"
+    }
+}
+
+//use navbar to navigate to different sections on the page
+function scrollToSection(sectionId) {
+    let section = document.getElementById(sectionId)
+    if (section) {
+        window.scrollTo({
+            top: section.offsetTop - (0.15 * window.innerHeight),
+            behavior: 'smooth'
+        })
     }
 }

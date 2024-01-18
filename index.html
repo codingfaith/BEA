@@ -16,22 +16,22 @@
     <script src="https://kit.fontawesome.com/b6e71eb567.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section id="container">
-        <header>
-            <span id="name-container">
-                <img src="img/BEA.jpg" alt="logo" id="logo">
-                <span id="name">BARE EAGLER ATTORNEYS</span>
-            </span>
-            <span class="material-symbols-outlined" id="menu">menu</span>
-            <nav id="nav">
-                <span id="close">X</span>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#services">OUR SERVICES</a></li>
-                <li><a href="#about">ABOUT US</a></li>
-                <li><a href="#people">OUR PEOPLE</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </nav>
-        </header>
+    <header>
+        <span id="name-container">
+            <img src="img/BEA.jpg" alt="logo" id="logo">
+            <span id="name">BARE EAGLER ATTORNEYS</span>
+        </span>
+        <span class="material-symbols-outlined" id="menu">menu</span>
+        <nav id="nav">
+            <span id="close">X</span>
+            <a onclick="scrollToSection('#')">HOME</a>
+            <a onclick="scrollToSection('services')">OUR SERVICES</a>
+            <a onclick="scrollToSection('about')">ABOUT US</a>
+            <a onclick="scrollToSection('people')">OUR PEOPLE</a>
+            <a onclick="scrollToSection('contact')">CONTACT</a>
+        </nav>
+    </header>
+    <main>    
         <section class="landing_section" id="#">
             <div class="overlay">
                 <h1>ATTORNEYS-AT-LAW</h1>
@@ -239,8 +239,8 @@
                 <input type="submit" value="SUBMIT">
             </form><br>
         </section>
-        <footer>Copyright @ 2024. All rights reserved.</footer>
-    </section>
+    </main>
+    <footer>Copyright @ 2024. All rights reserved.</footer>
     <script src="index.js"></script>
 </body>
 </html>

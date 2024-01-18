@@ -57,7 +57,7 @@ span#close {
 p#more_eagler {
     display: none;
 }
-nav li {
+nav a {
     padding: 0.5em;
     list-style: none;
     font-weight: bold;
@@ -145,13 +145,6 @@ img#eagler {
     display: block;
     border-radius: 50%;
     box-shadow: 1px 1px 2px 2px #7c7c7c;
-}
-section#container {
-    display: flex;
-    min-height: 100vh;
-    position: relative;
-    overflow-y: scroll;
-    flex-direction: column;
 }
 footer {
     bottom: 0;
@@ -392,11 +385,11 @@ input[type="submit"] {
         height: fit-content;
         justify-content: space-around;    
     }
-    nav li a {
+    nav a {
         color: black;
         font-weight: 300;
     }
-    nav li a:hover {
+    nav a:hover {
         color: #DF3E53;
     }
     #logo {
