@@ -74,4 +74,5 @@ our_services.addEventListener('click',()=>{
     main_services.style.display = "flex"
     services_title.style.display ="block"
     specialisation.style.display = "none"
+    more_servicesBtn.style.display = "block"
 })
