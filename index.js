@@ -3,6 +3,7 @@ const nav = document.getElementById('nav')
 const menu = document.getElementById('menu')
 const closeX = document.getElementById('close')
 const allATags = document.getElementsByTagName('a')
+const our_services = document.getElementById('our-services')
 const more_eagler = document.getElementById('more_eagler')
 const contact_logo = document.getElementById('contact-logo')
 const allLogos = document.getElementsByClassName('bea-image')
@@ -12,6 +13,7 @@ const specialisation = document.getElementById('specialisation')
 const more_servicesBtn = document.getElementById('more-services')
 const people_read_moreBtn = document.getElementById('people_read-more')
 const specialisation_title = document.getElementById('specialisation_title')
+
 
 
 // show nav bar when menu bar is clicked
@@ -31,7 +33,6 @@ more_servicesBtn.addEventListener('click',()=>{
     specialisation.style.display = "block"
     more_servicesBtn.style.display = "none"
     specialisation_title.style.display = "block"
-    // specialisation_title.style.marginTop = "-35px"
 })
 
 // show more_eagler paragraph when the read more button is clicked
@@ -68,3 +69,9 @@ function scrollToSection(sectionId) {
         })
     }
 }
+//go back to main services when clicked
+our_services.addEventListener('click',()=>{
+    main_services.style.display = "flex"
+    services_title.style.display ="block"
+    specialisation.style.display = "none"
+})
