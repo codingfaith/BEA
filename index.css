@@ -188,7 +188,6 @@ p#quote {
     text-align: center;
     background: rgba(225,225,225,0.7);    
 }
-div.contract,
 div.about_body-content {
     margin: auto;
     max-width: 1024px;
@@ -212,11 +211,8 @@ span.space {
     margin-left: 10px;
 }
 div#specialisation {
-    display: none;
     margin: auto;
-    max-width: 1024px;
-    box-shadow: 1px 1px 5px 1px #aca8a6;
-
+    display: none;
 }
 figure  {
     margin: 0;
@@ -439,12 +435,6 @@ input[type="submit"] {
     div.services_body dl {
         min-width: 45%;
     } 
-    div.specifics {
-        display: flex;
-    }
-    div.specifics p {
-        width: 50%;
-    }
     section.contact,
     section.services {
         display: flex;
@@ -466,6 +456,9 @@ input[type="submit"] {
     section.people {
         flex-direction: row-reverse;
     } 
+    div#specialisation {
+        width: 60%;
+    }
 }
 @media only screen and (min-width: 800px){
     div.people_content {
@@ -476,7 +469,7 @@ input[type="submit"] {
     } 
     div.people_content {
        justify-content: space-around;
-    } 
+    }
 }
 @media only screen and (min-width: 992px){
     body {
@@ -505,5 +498,8 @@ input[type="submit"] {
     input[type="email"],
     input[type="submit"]{
         font-size: large;
+    }
+    div#specialisation h1 {
+        font-size: xx-large;
     }  
 }

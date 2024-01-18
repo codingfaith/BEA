@@ -6,6 +6,8 @@ const allATags = document.getElementsByTagName('a')
 const more_eagler = document.getElementById('more_eagler')
 const contact_logo = document.getElementById('contact-logo')
 const allLogos = document.getElementsByClassName('bea-image')
+const main_services = document.getElementById('main-services')
+const services_title = document.getElementById('services-title')
 const specialisation = document.getElementById('specialisation')
 const more_servicesBtn = document.getElementById('more-services')
 const people_read_moreBtn = document.getElementById('people_read-more')
@@ -24,10 +26,12 @@ closeX.addEventListener('click',()=>{
 
 // show specialisation div, hide read more button and display and reposition title when read more button is clicked
 more_servicesBtn.addEventListener('click',()=>{
+    main_services.style.display = "none"
+    services_title.style.display ="none"
     specialisation.style.display = "block"
     more_servicesBtn.style.display = "none"
     specialisation_title.style.display = "block"
-    specialisation_title.style.marginTop = "-35px"
+    // specialisation_title.style.marginTop = "-35px"
 })
 
 // show more_eagler paragraph when the read more button is clicked
