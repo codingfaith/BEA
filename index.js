@@ -4,11 +4,13 @@ const menu = document.getElementById('menu')
 const closeX = document.getElementById('close')
 const allATags = document.getElementsByTagName('a')
 const more_eagler = document.getElementById('more_eagler')
+const contact_logo = document.getElementById('contact-logo')
+const allLogos = document.getElementsByClassName('bea-image')
 const specialisation = document.getElementById('specialisation')
 const more_servicesBtn = document.getElementById('more-services')
 const people_read_moreBtn = document.getElementById('people_read-more')
 const specialisation_title = document.getElementById('specialisation_title')
-const contact_logo_container = document.getElementById('contact-logo-container')
+
 
 // show nav bar when menu bar is clicked
 menu.addEventListener('click',()=>{
@@ -38,12 +40,14 @@ people_read_moreBtn.addEventListener('click',()=>{
 const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 for(let tag of allATags){
     if (screenWidth < 481) {
+        contact_logo.style.display = "none"
         tag.addEventListener('click',()=>{
             nav.style.display = "none" 
         })
     }     
 }
 if (screenWidth >= 600) {
-    contact_logo_container.style.display = "block"
+    for(let logo of allLogos){
+        logo.style.display = "none"
+    }
 }
-
