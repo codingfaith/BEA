@@ -428,7 +428,8 @@ div.services_body {
     }
     div.title {
         width: 40%;
-        padding-top: 1em; 
+        padding-top: 1em;
+        justify-content: center; 
     }
     div.specific,
     div.services_body dl {
