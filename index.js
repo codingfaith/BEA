@@ -33,6 +33,10 @@ more_servicesBtn.addEventListener('click',()=>{
     specialisation.style.display = "block"
     more_servicesBtn.style.display = "none"
     specialisation_title.style.display = "block"
+    window.scrollTo({
+        top: specialisation.offsetTop - (0.15 * window.innerHeight),
+        behavior: 'smooth'
+    })
 })
 
 // show more_eagler paragraph when the read more button is clicked
