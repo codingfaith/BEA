@@ -109,7 +109,7 @@ section.landing_section {
     position: absolute;
     background-size:cover;
     background-repeat: no-repeat;
-    background-image: url('img/background.jpg');
+    background-image: url('img/background1.jpg');
 }
 span.color {
     color: #DF3E53;
@@ -457,6 +457,9 @@ div.services_body {
     } 
     div#specialisation {
         width: 60%;
+    }
+    section.landing_section {
+        background-image: url('img/background2.jpg');
     }
 }
 @media only screen and (min-width: 800px){
