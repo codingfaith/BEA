@@ -382,6 +382,9 @@ div.services_body {
     span#close {
         display: none;
     }
+    div.image {
+        margin-top: 2em;
+    }
     nav {
         top: auto;
         right: 20px;
