@@ -461,13 +461,17 @@ div.services_body {
     section.landing_section {
         background-image: url('img/background2.jpg');
     }
+    figure  {
+        align-items:flex-start;
+    }
 }
 @media only screen and (min-width: 800px){
     div.people_content {
         flex-direction: row;
     }
     section.people_body {
-        padding: 2.5em;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
     } 
     div.people_content {
        justify-content: space-around;
