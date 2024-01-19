@@ -76,7 +76,7 @@ function scrollToSection(sectionId) {
 //go back to main services when clicked
 our_services.addEventListener('click',()=>{
     main_services.style.display = "flex"
-    services_title.style.display ="block"
+    services_title.style.display ="flex"
     specialisation.style.display = "none"
     more_servicesBtn.style.display = "block"
 })
