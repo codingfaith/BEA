@@ -116,10 +116,10 @@ span.color {
 }
 div.title {
     display: flex;
+    font-size: 20px;
     padding-left: 0.5em;
     background: #eaf4f6;
     justify-content: space-between;
-    font-size: 20px;
 }
 section.people {
     display: flex;
@@ -350,6 +350,13 @@ input[type="submit"] {
     cursor: not-allowed;
     background: #DF3E53;
 }
+div.services_body {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    padding-top: 1em;
+    flex-direction: column;
+}
 
 /* media queries */
 @media only screen and (min-width: 481px){
@@ -415,10 +422,8 @@ input[type="submit"] {
     }
     div.services_body {
         width: 60%;
-        padding: 0;
-        display: flex;
         flex-wrap: wrap;
-        padding-top: 1em; 
+        flex-direction: row;
         justify-content: space-around;
     }
     div.title {
