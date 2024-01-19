@@ -92,7 +92,7 @@ div.overlay {
     height: auto;
     display: flex;
     position: absolute;
-    background: rgba(223,62,83,0.6);
+    background: rgba(223,62,83,0.3);
 }
 div.overlay h1 {
     margin: auto;
